@@ -13,8 +13,21 @@ const Login = () => {
     password: "",
   });
 
+  const onSubmitHandler = (e) => {
+    e.preventDefault();
+    if (
+      validation.name === owner.name &&
+      validation.email === owner.email &&
+      validation.password === owner.password
+    ) {
+      return alert("Welcome");
+    } else {
+      return alert("You are not the owner!");
+    }
+  };
+
   return (
-    <form>
+    <form onSubmit={onSubmitHandler}>
       <div>
         <div>
           <label>User</label>
@@ -47,6 +60,7 @@ const Login = () => {
           />
         </div>
       </div>
+      <input type="submit" value="Submit" />
     </form>
   );
 };
