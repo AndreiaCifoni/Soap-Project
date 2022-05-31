@@ -3,8 +3,8 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Home from "./Home";
 import Login from "./Login";
 import Register from "./Register";
-import Soaps from "./Soaps";
-import SoapCard from "./SoapCard";
+import Soaps from "./soap/Soaps";
+import SoapCard from "./soap/SoapCard";
 import Workshop from "./Workshops";
 
 const App = () => {
