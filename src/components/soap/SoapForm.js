@@ -1,32 +1,58 @@
 import React from "react";
+import Axios from "axios";
+import "../layout/form.css";
 
 const SoapForm = ({ soap, setSoap }) => {
+  const onChangeFile = (files) => {
+    const formData = new FormData();
+    formData.append("file", soap);
+    formData.append("upload_preset", "yzjnn6ki");
+
+    Axios.post(
+      "https://api.cloudinary.com/v1_1/deiacifoni/image/upload",
+      formData
+    ).then((response) => {
+      console.log(response);
+    });
+  };
+
   return (
-    <div>
+    <div className="container">
       <form>
         <div>
-          <label>Product Name</label>
-          <input
-            type="text"
-            value={soap.product}
-            onChange={(e) => setSoap({ ...soap, product: e.target.value })}
-          />
+          <div className="form-element">
+            <label>Product Name</label>
+            <input
+              type="text"
+              value={soap.product}
+              onChange={(e) => setSoap({ ...soap, product: e.target.value })}
+            />
+          </div>
+          <div className="form-element">
+            <label>Url</label>
+            <input
+              type="file"
+              value={soap.url}
+              onChange={(event) => setSoap(event.target.files[0])}
+              multiple
+            />
+          </div>
+          <div className="form-element">
+            <label>Description</label>
+            <textarea
+              value={soap.description}
+              onChange={(e) =>
+                setSoap({ ...soap, description: e.target.value })
+              }
+            />
+          </div>
         </div>
-        <div>
-          <label>Img</label>
-          <img
-            src={soap.url}
-            alt=""
-            onChange={(e) => setSoap({ ...soap, url: e.target.value })}
-          />
-        </div>
-        <div>
-          <label>Description</label>
-          <textarea
-            value={soap.description}
-            onChange={(e) => setSoap({ ...soap, description: e.target.value })}
-          />
-        </div>
+        <input
+          className="btn"
+          onClick={onChangeFile}
+          type="submit"
+          value="Submit"
+        />
       </form>
     </div>
   );
