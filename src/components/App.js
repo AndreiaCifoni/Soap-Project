@@ -1,11 +1,10 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Home";
-import Login from "./Login";
-import Register from "./Register";
+import Login from "./user/Login";
+import Register from "./user/Register";
 import Soaps from "./soap/Soaps";
 import SoapCard from "./soap/SoapCard";
-import Workshop from "./Workshops";
 import SoapCreate from "./soap/SoapCreate";
 import SoapEdit from "./soap/SoapEdit";
 
@@ -20,7 +19,6 @@ const App = () => {
         <Route path={"/soapcard"} element={<SoapCard />} />
         <Route path={"/soapcreate"} element={<SoapCreate />} />
         <Route path={"/soapedit"} element={<SoapEdit />} />
-        <Route path={"/workshop"} element={<Workshop />} />
       </Routes>
     </BrowserRouter>
   );

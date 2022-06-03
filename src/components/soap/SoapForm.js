@@ -1,12 +1,14 @@
 import React from "react";
 import Axios from "axios";
+import { Image } from "cloudinary-react";
 import "../layout/form.css";
 
 const SoapForm = ({ soap, setSoap }) => {
-  const onChangeFile = (files) => {
+  const onChangeFile = () => {
     const formData = new FormData();
     formData.append("file", soap);
     formData.append("upload_preset", "yzjnn6ki");
+    console.log(formData);
 
     Axios.post(
       "https://api.cloudinary.com/v1_1/deiacifoni/image/upload",
@@ -35,6 +37,11 @@ const SoapForm = ({ soap, setSoap }) => {
               value={soap.url}
               onChange={(event) => setSoap(event.target.files[0])}
               multiple
+            />
+            <Image
+              className="img"
+              cloudName="deiacifoni"
+              publicId="https://res.cloudinary.com/deiacifoni/image/upload/v1654193215/mz2oi8upo89ffvcqy1bu.jpg"
             />
           </div>
           <div className="form-element">
