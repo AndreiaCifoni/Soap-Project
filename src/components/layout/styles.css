@@ -1,0 +1,68 @@
+/* green-orange
+#264653
+#2a9d8f
+#e9c46a
+#f4a261
+#e76f51
+
+verde- laranja, rosa    vencedora!!!!
+#227c9d
+#17c3b2
+#ffcb77
+#fef9ef  ou #faf3dd
+#fe6d73
+
+tons pastel rosa, amarelo, verde, cinza
+#ffa69e
+#faf3dd
+#b8f2e6
+#aed9e0
+#5e6472 */
+
+body {
+  margin: 0;
+  background-color: #faf3dd;
+}
+
+.nav-container {
+  width: 100%;
+  padding: 30px;
+  margin-bottom: 30px;
+  background-color: #227c9d;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.nav-link a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #faf3dd;
+}
+
+.nav-link a:hover {
+  color: #264653;
+}
+
+.soap-link {
+  display: block;
+  width: 100px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #faf3dd;
+  /* color: #662c2e; */
+  background-color: #fe6d73;
+  margin: 200px auto;
+  padding: 15px 25px;
+  border-radius: 5px;
+}
+
+.soap-link:hover {
+  color: #662c2e;
+}
