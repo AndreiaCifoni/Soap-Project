@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../layout/styles.css";
 
 const owner = {
   name: "Andreia Cifoni",
@@ -27,41 +28,43 @@ const UserForm = () => {
   };
 
   return (
-    <form onSubmit={onSubmitHandler}>
-      <div>
+    <div className="user-form">
+      <form onSubmit={onSubmitHandler}>
         <div>
-          <label>User</label>
-          <input
-            type="text"
-            value={validation.name}
-            onChange={(e) =>
-              setValidation({ ...validation, name: e.target.value })
-            }
-          />
+          <div className="user-input">
+            <label>User</label>
+            <input
+              type="text"
+              value={validation.name}
+              onChange={(e) =>
+                setValidation({ ...validation, name: e.target.value })
+              }
+            />
+          </div>
+          <div className="user-input">
+            <label>Email</label>
+            <input
+              type="email"
+              value={validation.email}
+              onChange={(e) =>
+                setValidation({ ...validation, email: e.target.value })
+              }
+            />
+          </div>
+          <div className="user-input">
+            <label>Password</label>
+            <input
+              type="password"
+              value={validation.password}
+              onChange={(e) =>
+                setValidation({ ...validation, password: e.target.value })
+              }
+            />
+          </div>
         </div>
-        <div>
-          <label>Email</label>
-          <input
-            type="email"
-            value={validation.email}
-            onChange={(e) =>
-              setValidation({ ...validation, email: e.target.value })
-            }
-          />
-        </div>
-        <div>
-          <label>Password</label>
-          <input
-            type="password"
-            value={validation.password}
-            onChange={(e) =>
-              setValidation({ ...validation, password: e.target.value })
-            }
-          />
-        </div>
-      </div>
-      <input type="submit" value="Submit" />
-    </form>
+        <input className="user-btn" type="submit" value="Submit" />
+      </form>
+    </div>
   );
 };
 

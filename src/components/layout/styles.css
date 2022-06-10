@@ -66,3 +66,34 @@ body {
 .soap-link:hover {
   color: #662c2e;
 }
+
+.user-form {
+  width: 50%;
+  margin: 48px auto;
+  padding: 20px 30px;
+  background-color: #ffa69e;
+  border-radius: 5px;
+}
+
+.user-form-title {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  color: #18576e;
+  margin-top: 50px;
+}
+
+.user-input {
+  color: #18576e;
+}
+
+.user-btn {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 40px 0 20px 0;
+  padding: 10px 15px;
+  color: #faf3dd;
+  background-color: #227c9d;
+  border: 1px solid #264653;
+  border-radius: 5px;
+}
