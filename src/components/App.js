@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import Login from "./user/Login";
 import Register from "./user/Register";
-import Soaps from "./soap/Soaps";
+import SoapList from "./soap/SoapList";
 import SoapCard from "./soap/SoapCard";
 import SoapCreate from "./soap/SoapCreate";
 import SoapEdit from "./soap/SoapEdit";
@@ -15,7 +15,7 @@ const App = () => {
         <Route path={"/"} element={<Home />} />
         <Route path={"/login"} element={<Login />} />
         <Route path={"/register"} element={<Register />} />
-        <Route path={"/soaps"} element={<Soaps />} />
+        <Route path={"/soaplist"} element={<SoapList />} />
         <Route path={"/soapcard"} element={<SoapCard />} />
         <Route path={"/soapcreate"} element={<SoapCreate />} />
         <Route path={"/soapedit"} element={<SoapEdit />} />

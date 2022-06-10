@@ -83,17 +83,77 @@ body {
   margin-top: 50px;
 }
 
-.user-input {
+.user-form label {
   color: #18576e;
+}
+
+.user-input {
+  font-size: 18px;
+  color: #18576e;
+  margin: 10px 20px;
+  border: 1px solid #264653;
+  border-radius: 5px;
 }
 
 .user-btn {
   font-size: 16px;
   font-weight: bold;
-  margin: 40px 0 20px 0;
+  margin: 20px 0 20px 0;
   padding: 10px 15px;
   color: #faf3dd;
   background-color: #227c9d;
   border: 1px solid #264653;
   border-radius: 5px;
+}
+
+.user-btn:hover {
+  color: #18576e;
+}
+
+.soap-list-btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 20px 20px;
+  padding: 10px 15px;
+  color: #faf3dd;
+  background-color: #227c9d;
+  border: 1px solid #264653;
+  border-radius: 5px;
+}
+
+.soap-list-btn:hover {
+  color: #18576e;
+}
+
+.soap-form {
+  width: 50%;
+  margin: 30px auto;
+  padding: 20px 30px;
+  background-color: rgb(255, 213, 136);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.soap-input {
+  width: 50%;
+  padding: 10px 15px;
+  /* background-color: blue; */
+}
+
+.soap-input label {
+  display: inline-block;
+  margin: 8px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.soap-form-btn {
+  padding: 8px 10px;
+  margin-top: 30px;
+}
+
+.soap-form-img {
+  width: 100px;
 }

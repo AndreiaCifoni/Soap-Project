@@ -31,9 +31,10 @@ const UserForm = () => {
     <div className="user-form">
       <form onSubmit={onSubmitHandler}>
         <div>
-          <div className="user-input">
+          <div>
             <label>User</label>
             <input
+              className="user-input"
               type="text"
               value={validation.name}
               onChange={(e) =>
@@ -41,9 +42,10 @@ const UserForm = () => {
               }
             />
           </div>
-          <div className="user-input">
+          <div>
             <label>Email</label>
             <input
+              className="user-input"
               type="email"
               value={validation.email}
               onChange={(e) =>
@@ -51,9 +53,10 @@ const UserForm = () => {
               }
             />
           </div>
-          <div className="user-input">
+          <div>
             <label>Password</label>
             <input
+              className="user-input"
               type="password"
               value={validation.password}
               onChange={(e) =>

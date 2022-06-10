@@ -1,7 +1,7 @@
 import React from "react";
 import Axios from "axios";
 import { Image } from "cloudinary-react";
-import "../layout/form.css";
+import "../layout/styles.css";
 
 const SoapForm = ({ soap, setSoap }) => {
   const onChangeFile = () => {
@@ -19,10 +19,10 @@ const SoapForm = ({ soap, setSoap }) => {
   };
 
   return (
-    <div className="container">
+    <div className="soap-form">
       <form>
         <div>
-          <div className="form-element">
+          <div className="soap-input">
             <label>Product Name</label>
             <input
               type="text"
@@ -30,7 +30,7 @@ const SoapForm = ({ soap, setSoap }) => {
               onChange={(e) => setSoap({ ...soap, product: e.target.value })}
             />
           </div>
-          <div className="form-element">
+          <div className="soap-input">
             <label>Url</label>
             <input
               type="file"
@@ -39,12 +39,12 @@ const SoapForm = ({ soap, setSoap }) => {
               multiple
             />
             <Image
-              className="img"
+              className="soap-form-img"
               cloudName="deiacifoni"
               publicId="https://res.cloudinary.com/deiacifoni/image/upload/v1654193215/mz2oi8upo89ffvcqy1bu.jpg"
             />
           </div>
-          <div className="form-element">
+          <div className="soap-input">
             <label>Description</label>
             <textarea
               value={soap.description}
@@ -55,7 +55,7 @@ const SoapForm = ({ soap, setSoap }) => {
           </div>
         </div>
         <input
-          className="btn"
+          className="soap-form-btn"
           onClick={onChangeFile}
           type="submit"
           value="Submit"

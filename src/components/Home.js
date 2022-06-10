@@ -8,7 +8,7 @@ const Home = () => {
     <React.Fragment>
       <Navbar />
       <div>
-        <Link className="soap-link" to={"/soaps"}>
+        <Link className="soap-link" to={"/soaplist"}>
           Soaps
         </Link>
       </div>
