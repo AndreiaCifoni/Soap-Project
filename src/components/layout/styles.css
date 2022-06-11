@@ -112,7 +112,9 @@ body {
   border-radius: 5px;
 }
 
-.user-btn:hover {
+.user-btn:hover,
+.card-btn:hover,
+.soap-list-btn:hover {
   color: #18576e;
 }
 
@@ -130,10 +132,6 @@ body {
   background-color: #227c9d;
   border: 1px solid #264653;
   border-radius: 5px;
-}
-
-.soap-list-btn:hover {
-  color: #18576e;
 }
 
 /* SOAP FORM*/
@@ -203,5 +201,25 @@ body {
   width: 300px;
   height: 400px;
   margin: 50px 30px;
-  border: 2px solid red;
+  border: 2px solid #227c9d;
+  border-radius: 5px;
+}
+
+.card-img {
+  width: 300px;
+}
+
+.card-text {
+  margin: 10px 20px;
+}
+
+.card-btn {
+  display: block;
+  font-size: 16px;
+  color: #faf3dd;
+  margin: 30px auto;
+  padding: 10px 20px;
+  background-color: #227c9d;
+  border: 1px solid #264653;
+  border-radius: 5px;
 }
