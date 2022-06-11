@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import UserForm from "./UserForm";
+import axios from "axios";
 import "../layout/styles.css";
 
 const Register = () => {
@@ -10,7 +11,16 @@ const Register = () => {
   });
 
   const onSubmit = () => {
-    alert("submited register");
+    axios({
+      method: "POST",
+      data: {
+        username: validation.name,
+        email: validation.email,
+        password: validation.password,
+      },
+      withCredentials: true,
+      url: "http://localhost:4000/register",
+    }).then((res) => console.log(res));
   };
 
   return (

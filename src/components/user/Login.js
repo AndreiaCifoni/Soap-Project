@@ -9,7 +9,15 @@ const Login = () => {
   });
 
   const onSubmit = () => {
-    alert("submited login");
+    axios({
+      method: "POST",
+      data: {
+        username: validation.name,
+        password: validation.password,
+      },
+      withCredentials: true,
+      url: "http://localhost:4000/login",
+    }).then((res) => console.log(res));
   };
 
   return (

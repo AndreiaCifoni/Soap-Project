@@ -114,7 +114,8 @@ body {
 
 .user-btn:hover,
 .card-btn:hover,
-.soap-list-btn:hover {
+.soap-list-btn:hover,
+.soap-form-btn:hover {
   color: #18576e;
 }
 
@@ -189,10 +190,6 @@ body {
   background-color: #227c9d;
   border: 2px solid #264653;
   border-radius: 5px;
-}
-
-.soap-form-btn:hover {
-  color: #18576e;
 }
 
 /* SOAP CARD*/
