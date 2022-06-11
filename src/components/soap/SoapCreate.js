@@ -10,7 +10,7 @@ const SoapCreate = () => {
 
   return (
     <div>
-      <h2>Create a new Product:</h2>
+      <h1 className="soap-form-title">Create a new Product:</h1>
       <SoapForm soap={newSoap} setSoap={setNewSoap} />
     </div>
   );

@@ -10,7 +10,7 @@ const SoapEdit = () => {
 
   return (
     <div>
-      <h2>Edit a Product:</h2>
+      <h1 className="soap-form-title">Edit a Product:</h1>
       <SoapForm soap={editSoap} setSoap={setEditSoap} />
     </div>
   );

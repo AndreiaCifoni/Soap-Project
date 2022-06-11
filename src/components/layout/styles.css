@@ -24,6 +24,8 @@ body {
   background-color: #faf3dd;
 }
 
+/* NAVBAR*/
+
 .nav-container {
   width: 100%;
   padding: 30px;
@@ -48,6 +50,8 @@ body {
   color: #264653;
 }
 
+/* HOME SOAP BTN*/
+
 .soap-link {
   display: block;
   width: 100px;
@@ -67,6 +71,8 @@ body {
   color: #662c2e;
 }
 
+/* USER FORM*/
+
 .user-form {
   width: 50%;
   font-size: 18px;
@@ -78,7 +84,8 @@ body {
   border-radius: 5px;
 }
 
-.user-form-title {
+.user-form-title,
+.soap-form-title {
   display: flex;
   justify-content: center;
   font-weight: bold;
@@ -109,6 +116,7 @@ body {
   color: #18576e;
 }
 
+/* SOAP LIST*/
 /* ****DA PRA MELHORAR ESSA LINHA DE BAIXO COM O BOTAO DE CIMA */
 
 .soap-list-btn {
@@ -128,47 +136,72 @@ body {
   color: #18576e;
 }
 
+/* SOAP FORM*/
 /* ******   DA PRA MELHORAR ESSE FORM COM O USER-FORM ... O INPUT TBM */
 
 .soap-form {
   width: 50%;
-  margin: 30px auto;
-  padding: 20px 30px;
-  background-color: #ffcb77;
-  color: #18576e;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
-/* .user-form {
-  width: 50%;
-  font-size: 18px;
-  font-weight: bold;
-  color: #18576e;
   margin: 48px auto;
   padding: 20px 30px;
-  background-color: #ffa69e;
+  color: #18576e;
+  background-color: #ffcb77;
   border-radius: 5px;
-} */
+}
 
 .soap-input {
   font-size: 18px;
-  width: 50%;
-  padding: 10px 15px;
+  color: #18576e;
+  margin: 10px 0;
+  border: 1px solid #264653;
+  border-radius: 5px;
 }
 
-.soap-input label {
+.soap-form label {
   display: inline-block;
-  margin: 8px 0;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
+  margin: 20px 15px 0px 0;
 }
 
-.soap-form-btn {
-  padding: 8px 10px;
-  margin-top: 30px;
+.soap-input-img {
+  font-size: 16px;
+  border-radius: 5px;
 }
 
 .soap-form-img {
-  width: 100px;
+  display: inline;
+  width: 60px;
+  margin: 15px 0;
+}
+
+.soap-input-text {
+  width: 250px;
+  height: 100px;
+  margin-top: 20px;
+  vertical-align: top;
+  border-radius: 5px;
+}
+
+.soap-form-btn {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 50px 0 20px 0;
+  padding: 10px 15px;
+  color: #faf3dd;
+  background-color: #227c9d;
+  border: 2px solid #264653;
+  border-radius: 5px;
+}
+
+.soap-form-btn:hover {
+  color: #18576e;
+}
+
+/* SOAP CARD*/
+
+.soap-card {
+  width: 300px;
+  height: 400px;
+  margin: 50px 30px;
+  border: 2px solid red;
 }
