@@ -1,0 +1,13 @@
+NOTES:: 
+**O que FALTA:
+- ever login que nao esta terminado
+
+
+
+** o api server é foi configurado com o "JSON server" package
+
+
+**como abrir o projeto
+in "soap-project" run "npm start"
+in "backend" run "nodemon server.js"
+in "api" run "npm start"
