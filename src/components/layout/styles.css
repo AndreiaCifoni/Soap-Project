@@ -32,26 +32,40 @@ body {
 
 .nav-container {
   width: 100%;
-  padding: 30px;
-  margin-bottom: 30px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #faf3dd;
   background-color: #227c9d;
 }
 
-.nav-link {
-  display: flex;
-  justify-content: flex-start;
-  gap: 30px;
+.nav-title {
+  font-size: 2rem;
+  margin-left: 32px;
 }
 
-.nav-link a {
+.nav-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 35px;
+  margin-right: 32px;
+}
+
+.nav-item {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.4rem;
   font-weight: bold;
   color: #faf3dd;
 }
 
-.nav-link a:hover {
+.nav-item:hover {
   color: #264653;
+}
+
+.nav-icon {
+  display: none;
 }
 
 /* HOME SOAP BTN*/
