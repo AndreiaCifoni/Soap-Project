@@ -3,7 +3,7 @@ import Axios from "axios";
 import { Image } from "cloudinary-react";
 import "../layout/styles.css";
 
-const SoapForm = ({ soap, setSoap }) => {
+const SoapForm = ({ soap, setSoap, onSubmit }) => {
   const onChangeFile = () => {
     const formData = new FormData();
     formData.append("file", soap);
@@ -20,7 +20,7 @@ const SoapForm = ({ soap, setSoap }) => {
 
   return (
     <div className="soap-form">
-      <form>
+      <form onSubmit={onSubmit}>
         <div>
           <div>
             <label>Product Name</label>
