@@ -72,38 +72,54 @@ body {
   .nav-container {
     position: absolute;
     top: 0;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 80px 200px;
+  }
+
+  .nav-title {
+    grid-column: 1 / 3;
   }
 
   .nav-list {
+    grid-column: 3 / 7;
+    grid-row: 2 / 3;
     position: relative;
-    top: 166px;
-    left: -100%;
+    top: 31px;
+    left: -150%;
     display: flex;
     flex-direction: column;
-    width: 50%;
-
+    width: 100%;
     transform: all 0.5s ease;
-    background-color: #ffcb77;
+    background-color: #f4a261;
     padding: 0;
     margin: 0 auto;
+    gap: 0;
     align-items: center;
   }
 
+  .nav-icon {
+    grid-column: 8 / 9;
+    display: inline-block;
+    color: #faf3dd;
+  }
+
+  .nav-icon:hover {
+    color: #264653;
+  }
+
   .nav-cell {
-    transition: all 0.8s ease;
+    transition: all 0.5s ease;
     left: 0;
   }
 
   .nav-item {
+    display: inline-block;
     width: 100%;
-    color: #18576e;
-    text-align: center;
-  }
-  .nav-item:hover {
-  }
-  .nav-icon {
-    display: block;
     color: #faf3dd;
+    text-align: center;
+    margin: 20px;
+    margin-left: 0;
   }
 }
 
