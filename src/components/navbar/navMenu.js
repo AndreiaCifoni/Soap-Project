@@ -6,17 +6,17 @@ const NavMenu = [
   },
   {
     title: "Contact us",
-    url: "#",
+    url: "/contact",
     cName: "nav-item",
   },
   {
     title: "Login",
-    url: "/Login",
+    url: "/login",
     cName: "nav-item",
   },
   {
     title: "Register",
-    url: "/Register",
+    url: "/register",
     cName: "nav-item",
   },
 ];
