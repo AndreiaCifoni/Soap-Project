@@ -21,7 +21,7 @@ const ContactUs = () => {
         <h1 className="contact-main-title">Contact Us</h1>
         <div className="contact-user">
           <h2>Let us know...</h2>
-          <h3>For any special request, sugestion or feedback:</h3>
+          <h3>For any special request or feedback:</h3>
           <form className="contact-form">
             <input type="text" placeholder="Name" />
             <input type="email" placeholder="Email" />
@@ -30,7 +30,7 @@ const ContactUs = () => {
           </form>
         </div>
         <div className="contact-info">
-          <h2>Come and say Hello to us!</h2>
+          <h2>Come and say Hello!</h2>
           <div>
             <p>Phone: (xxx)xxx-xxx</p>
             <p>E-mail: iLoveSoap@gmail.com</p>

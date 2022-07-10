@@ -5,14 +5,11 @@ import "./layout/styles.css";
 
 const Home = () => {
   return (
-    <React.Fragment>
-      <Navbar />
-      <div>
-        <Link className="soap-link" to={"/soaplist"}>
-          Soaps
-        </Link>
-      </div>
-    </React.Fragment>
+    <div>
+      <Link className="soap-link" to={"/soaplist"}>
+        Soaps
+      </Link>
+    </div>
   );
 };
 

@@ -4,6 +4,7 @@ NOTES::
     - image
     - server (send data of users/message to be visible to owner of page)
     - focus in form (remove black border)
+    - adjust media query (phone size)
 
 
 
