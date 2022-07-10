@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  CameraIcon,
-  ChatIcon,
-  HomeIcon,
-  MailIcon,
-  PhoneIcon,
-  ThumbUpIcon,
-} from "@heroicons/react/solid";
+import { CameraIcon, ChatIcon, ThumbUpIcon } from "@heroicons/react/solid";
 import "../layout/styles.css";
 
 const ContactUs = () => {

@@ -5,7 +5,8 @@ const SoapProducts = [
     title: "Garden Swirl",
     description: "",
     ingredients: "",
-    price: "",
+    price: "10.00",
+    id: "1",
   },
   {
     image:
@@ -13,7 +14,8 @@ const SoapProducts = [
     title: "Rainbow",
     description: "",
     ingredients: "",
-    price: "",
+    price: "10.00",
+    id: "2",
   },
   {
     image:
@@ -21,7 +23,8 @@ const SoapProducts = [
     title: "Purple Cristal",
     description: "",
     ingredients: "",
-    price: "",
+    price: "8.00",
+    id: "3",
   },
   {
     image:
@@ -29,7 +32,8 @@ const SoapProducts = [
     title: "Canadian Flag",
     description: "",
     ingredients: "",
-    price: "",
+    price: "12.00",
+    id: "4",
   },
   {
     image:
@@ -37,7 +41,8 @@ const SoapProducts = [
     title: "Orange-Mango Smoothie",
     description: "",
     ingredients: "",
-    price: "",
+    price: "12.00",
+    id: "5",
   },
   {
     image:
@@ -45,7 +50,8 @@ const SoapProducts = [
     title: "Passion Fruit Delicious",
     description: "",
     ingredients: "",
-    price: "",
+    price: "8.00",
+    id: "6",
   },
   {
     image:
@@ -53,7 +59,8 @@ const SoapProducts = [
     title: "Canadian Hockey Disk",
     description: "",
     ingredients: "",
-    price: "",
+    price: "10.00",
+    id: "7",
   },
   {
     image:
@@ -61,7 +68,8 @@ const SoapProducts = [
     title: "Gardens of Heart",
     description: "",
     ingredients: "",
-    price: "",
+    price: "8.00",
+    id: "8",
   },
   {
     image:
@@ -69,7 +77,8 @@ const SoapProducts = [
     title: "Soap Spheres",
     description: "",
     ingredients: "",
-    price: "",
+    price: "12.00",
+    id: "9",
   },
   {
     image:
@@ -77,6 +86,9 @@ const SoapProducts = [
     title: "Berries Swirl",
     description: "",
     ingredients: "",
-    price: "",
+    price: "8.00",
+    id: "10",
   },
 ];
+
+export default SoapProducts;
