@@ -1,5 +1,12 @@
 import React from "react";
-import { CameraIcon, ChatIcon, ThumbUpIcon } from "@heroicons/react/solid";
+import {
+  CameraIcon,
+  ChatIcon,
+  HomeIcon,
+  MailIcon,
+  PhoneIcon,
+  ThumbUpIcon,
+} from "@heroicons/react/solid";
 import "../layout/styles.css";
 
 const ContactUs = () => {
@@ -19,7 +26,7 @@ const ContactUs = () => {
             <input type="text" placeholder="Name" />
             <input type="email" placeholder="Email" />
             <textarea>Leave your message...</textarea>
-            <button className="contact-btn">Submit</button>
+            <button className="contact-btn">Contact Us</button>
           </form>
         </div>
         <div className="contact-info">
@@ -28,11 +35,11 @@ const ContactUs = () => {
             <p>Phone: (xxx)xxx-xxx</p>
             <p>E-mail: iLoveSoap@gmail.com</p>
             <p>Address: 18 Fake Street - Toronto - Canada</p>
-            <div>
-              <ThumbUpIcon className="icon" />
-              <CameraIcon className="icon" />
-              <ChatIcon className="icon" />
-            </div>
+          </div>
+          <div className="contact-social">
+            <ThumbUpIcon className="icon" />
+            <CameraIcon className="icon" />
+            <ChatIcon className="icon" />
           </div>
         </div>
       </div>
