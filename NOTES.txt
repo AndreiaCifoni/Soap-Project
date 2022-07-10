@@ -1,5 +1,9 @@
 NOTES:: 
 
+*Navbar 
+    - when click in menu (cell phone), goes to page and close dropdown menu (quando clico em "home", ele vai pra pagina mas nao fecha o menu - fazer fechar)
+    - increase font size of hamburguer icon
+
 *ContactUs
     - server (send data of users/message to be visible to owner of page)
     - focus in form (remove black border)
@@ -14,6 +18,12 @@ NOTES::
 
 *Register
     - make it work (server)
+
+*Home
+    - get better look to it
+
+*SoapList 
+    - remove/include btn of new/edit soap (only owner can see)
 
 
 
