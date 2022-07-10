@@ -19,16 +19,19 @@ tons pastel rosa, amarelo, verde, cinza
 #aed9e0
 #5e6472 */
 
+/* GENERAL STYLE */
+
 body {
   margin: 0;
   background-color: #faf3dd;
 }
 
-/* NAVBAR*/
 .icon {
   width: 24px;
   height: 24px;
 }
+
+/* NAVBAR*/
 
 .nav-container {
   width: 100%;
@@ -121,6 +124,19 @@ body {
     margin: 20px;
     margin-left: 0;
   }
+}
+
+/* CONTACT-US*/
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+}
+
+.contact-img {
+  width: 50px;
+  height: 50px;
 }
 
 /* HOME SOAP BTN*/

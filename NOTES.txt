@@ -1,4 +1,8 @@
 NOTES:: 
+- "ContactUs" -> imagem
+- "ContactUs" -> server (send data of users/message to be visible to owner of page)
+
+
 **O que FALTA:
 - ever login que nao esta terminado
 
