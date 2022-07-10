@@ -1,10 +1,19 @@
 NOTES:: 
 
 *ContactUs
-    - image
     - server (send data of users/message to be visible to owner of page)
     - focus in form (remove black border)
     - adjust media query (phone size)
+
+*User Form (Login, Register)
+    - adjust media query (phone size)
+
+*Login
+    - make it work (server)
+    - if user is owner of the soap store, so render the create/edit soap
+
+*Register
+    - make it work (server)
 
 
 

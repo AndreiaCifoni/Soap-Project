@@ -14,7 +14,7 @@ const ContactUs = () => {
     <div className="contact-container">
       <img
         className="contact-img"
-        scr="https://res.cloudinary.com/deiacifoni/image/upload/v1657415150/soap_d2hu2m.jpg"
+        src="https://res.cloudinary.com/deiacifoni/image/upload/v1657415150/soap_d2hu2m.jpg"
         alt="soap"
       />
       <div className="contact-container2">
