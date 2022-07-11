@@ -5,27 +5,29 @@ import "../layout/styles.css";
 
 const SoapCard = () => {
   return (
-    <div>
+    <React.Fragment>
       {SoapProducts.map((product) => {
         return (
           <div className="soap-card">
             <img className="card-img" src={product.image} alt={product.title} />
-            <h2>{product.title}</h2>
-            <p>
-              <CurrencyDollarIcon className="icon" />
-              {product.price}
-            </p>
+            <div className="card-text">
+              <h2>{product.title}</h2>
+              <p>
+                <CurrencyDollarIcon className="icon" />
+                {product.price}
+              </p>
+            </div>
             <div>
               <button className="card-btn">See more...</button>
-              <button className="card-btn">
-                <ShoppingCartIcon className="icon" />
+              <button className="card-btn card-btn-buy">
+                <ShoppingCartIcon className="card-icon" />
                 Add to cart
               </button>
             </div>
           </div>
         );
       })}
-    </div>
+    </React.Fragment>
   );
 };
 

@@ -4,7 +4,7 @@ import SoapCard from "./SoapCard";
 
 const SoapList = () => {
   return (
-    <div>
+    <div className="list-container">
       {/* <div>
         <Link className="soap-list-btn" to="/soapcreate">
           New Soap

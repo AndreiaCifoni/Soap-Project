@@ -262,7 +262,6 @@ body {
 }
 
 .user-btn:hover,
-.card-btn:hover,
 .soap-list-btn:hover,
 .soap-form-btn:hover {
   color: #18576e;
@@ -292,7 +291,7 @@ body {
 /* SOAP LIST*/
 /* ****DA PRA MELHORAR ESSA LINHA DE BAIXO COM O BOTAO DE CIMA */
 
-.soap-list-btn {
+/* .soap-list-btn {
   display: inline-block;
   text-decoration: none;
   font-size: 16px;
@@ -303,6 +302,68 @@ body {
   background-color: #227c9d;
   border: 1px solid #264653;
   border-radius: 5px;
+} */
+
+.list-container {
+  display: grid;
+  margin: 30px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* SOAP CARD*/
+
+.soap-card {
+  width: 300px;
+  height: 400px;
+  margin: 50px 30px;
+  border: 2px solid #227c9d;
+  border-radius: 5px;
+}
+
+.card-img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.card-text {
+  margin: 10px 20px;
+}
+
+.card-text p {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.card-btn {
+  display: inline-block;
+  font-size: 1rem;
+  color: #faf3dd;
+  margin: 15px;
+  padding: 8px;
+  background-color: #227c9d;
+  border: 2px solid #264653;
+  border-radius: 5px;
+}
+
+.card-btn:hover {
+  color: #264653;
+}
+
+.card-btn-buy {
+}
+
+.card-btn-buy:hover {
+  color: #264653;
+  background-color: #17c3b2;
+}
+
+.card-icon {
+  width: 1rem;
+  margin-right: 5px;
+  vertical-align: middle;
 }
 
 /* SOAP FORM*/
@@ -359,34 +420,5 @@ body {
   color: #faf3dd;
   background-color: #227c9d;
   border: 2px solid #264653;
-  border-radius: 5px;
-}
-
-/* SOAP CARD*/
-
-.soap-card {
-  width: 300px;
-  height: 400px;
-  margin: 50px 30px;
-  border: 2px solid #227c9d;
-  border-radius: 5px;
-}
-
-.card-img {
-  width: 300px;
-}
-
-.card-text {
-  margin: 10px 20px;
-}
-
-.card-btn {
-  display: block;
-  font-size: 16px;
-  color: #faf3dd;
-  margin: 30px auto;
-  padding: 10px 20px;
-  background-color: #227c9d;
-  border: 1px solid #264653;
   border-radius: 5px;
 }

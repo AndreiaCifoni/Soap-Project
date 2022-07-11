@@ -25,6 +25,9 @@ NOTES::
 *SoapList 
     - remove/include btn of new/edit soap (only owner can see)
 
+*SoapCard 
+    - adjust photo(there is a small gap btween photo and container)
+    - add card shadow
 
 
 **O que FALTA:
