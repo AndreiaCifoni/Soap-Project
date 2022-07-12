@@ -9,6 +9,7 @@ import SoapCard from "./soap/SoapCard";
 import SoapCreate from "./soap/SoapCreate";
 import SoapEdit from "./soap/SoapEdit";
 import Navbar from "./navbar/Navbar";
+import SoapInfo from "./soap/SoapInfo";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
           <Route path={"/soapcard"} element={<SoapCard />} />
           <Route path={"/soapcreate"} element={<SoapCreate />} />
           <Route path={"/soapedit"} element={<SoapEdit />} />
+          <Route path={"/soapinfo"} element={<SoapInfo />} />
         </Routes>
       </div>
     </div>
