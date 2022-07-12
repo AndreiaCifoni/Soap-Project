@@ -367,6 +367,18 @@ body {
   vertical-align: middle;
 }
 
+/* SOAP INFO */
+
+.info-container {
+}
+
+.info-img {
+  width: 300px;
+}
+
+.info-btn {
+}
+
 /* SOAP FORM*/
 /* ******   DA PRA MELHORAR ESSE FORM COM O USER-FORM ... O INPUT TBM */
 
