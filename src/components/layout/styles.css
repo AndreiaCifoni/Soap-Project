@@ -388,16 +388,60 @@ body {
   margin: auto;
 }
 
-.info-text {
+.info-content {
+  margin: 20px auto 20px 50px;
+  font-size: 1.2rem;
 }
 
-.info-detail {
+.info-text {
+  margin-top: 50px;
+  margin-right: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-price {
+  font-weight: bold;
+  margin-top: 40px;
 }
 
 .info-btn-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
 }
 
 .info-btn {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  color: #faf3dd;
+  margin: 15px;
+  padding: 8px;
+  background-color: #fe6d73;
+  border: 2px solid #fe6d73;
+  border-radius: 5px;
+}
+
+.info-link {
+  font-size: 1.1rem;
+}
+
+.info-btn:hover {
+  color: #ffa69e;
+}
+
+.info-icon {
+  width: 1rem;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.info-btn-buy:hover {
+  color: #662c2e;
+  background-color: #ffa69e;
 }
 
 /* SOAP FORM*/
