@@ -14,12 +14,14 @@ const SoapInfo = () => {
         src={SoapProducts[id].image}
         alt={SoapProducts[id].title}
       />
-      <div>
+      <div className="info-text">
         <h1>{SoapProducts[id].title}</h1>
-        <div>{SoapProducts[id].description}</div>
-        <div>{SoapProducts[id].ingredients}</div>
+        <div className="info-detail">
+          <div>{SoapProducts[id].description}</div>
+          <div>{SoapProducts[id].ingredients}</div>
+        </div>
         <div>{SoapProducts[id].price}</div>
-        <div>
+        <div className="info-btn-container">
           <Link className="info-btn" to="/soaplist">
             Back
           </Link>

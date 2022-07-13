@@ -29,6 +29,22 @@ NOTES::
     - adjust photo(there is a small gap btween photo and container)
     - add card shadow
 
+*implement REACT REDUX
+    - implement Redux to create/edit a soap and in the soap card to have a proper 'id'
+
+*implement Shades in cards/btn
+
+
+
+
+
+
+
+
+
+
+
+
 
 **O que FALTA:
 - ever login que nao esta terminado

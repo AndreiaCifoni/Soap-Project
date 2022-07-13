@@ -358,9 +358,6 @@ body {
   color: #264653;
 }
 
-.card-btn-buy {
-}
-
 .card-btn-buy:hover {
   color: #264653;
   background-color: #17c3b2;
@@ -375,10 +372,29 @@ body {
 /* SOAP INFO */
 
 .info-container {
+  height: 70vh;
+  color: #18576e;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  grid-template-rows: 1fr;
+  margin: 4rem 8rem;
+  background-color: #fef9ef;
 }
 
 .info-img {
-  width: 300px;
+  max-width: 450px;
+  max-height: 300px;
+  object-fit: cover;
+  margin: auto;
+}
+
+.info-text {
+}
+
+.info-detail {
+}
+
+.info-btn-container {
 }
 
 .info-btn {
