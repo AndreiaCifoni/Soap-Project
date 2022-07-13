@@ -8,7 +8,7 @@ const SoapProducts = [
     ingredients:
       "Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
     price: "10.00",
-    id: "1",
+    id: "0",
   },
   {
     image:
@@ -19,7 +19,7 @@ const SoapProducts = [
     ingredients:
       "Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
     price: "10.00",
-    id: "2",
+    id: "1",
   },
   {
     image:
@@ -30,7 +30,7 @@ const SoapProducts = [
     ingredients:
       "Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
     price: "8.00",
-    id: "3",
+    id: "2",
   },
   {
     image:
@@ -41,7 +41,7 @@ const SoapProducts = [
     ingredients:
       "Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
     price: "12.00",
-    id: "4",
+    id: "3",
   },
   {
     image:
@@ -52,7 +52,7 @@ const SoapProducts = [
     ingredients:
       "Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
     price: "12.00",
-    id: "5",
+    id: "4",
   },
   {
     image:
@@ -63,7 +63,7 @@ const SoapProducts = [
     ingredients:
       "Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
     price: "8.00",
-    id: "6",
+    id: "5",
   },
   {
     image:
@@ -74,7 +74,7 @@ const SoapProducts = [
     ingredients:
       "Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
     price: "10.00",
-    id: "7",
+    id: "6",
   },
   {
     image:
@@ -85,7 +85,7 @@ const SoapProducts = [
     ingredients:
       "Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
     price: "8.00",
-    id: "8",
+    id: "7",
   },
   {
     image:
@@ -96,7 +96,7 @@ const SoapProducts = [
     ingredients:
       "Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
     price: "12.00",
-    id: "9",
+    id: "8",
   },
   {
     image:
@@ -107,7 +107,7 @@ const SoapProducts = [
     ingredients:
       "Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
     price: "8.00",
-    id: "10",
+    id: "9",
   },
 ];
 

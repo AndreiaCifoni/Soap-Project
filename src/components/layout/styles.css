@@ -312,7 +312,7 @@ body {
 
 /* SOAP CARD*/
 
-.soap-card {
+.card-container {
   width: 300px;
   height: 400px;
   margin: 50px 30px;
@@ -339,6 +339,7 @@ body {
 }
 
 .card-btn {
+  text-decoration: none;
   display: inline-block;
   font-size: 1rem;
   color: #faf3dd;
@@ -347,6 +348,10 @@ body {
   background-color: #227c9d;
   border: 2px solid #264653;
   border-radius: 5px;
+}
+
+.card-link {
+  font-size: 1.1rem;
 }
 
 .card-btn:hover {
