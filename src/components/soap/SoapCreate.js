@@ -1,23 +1,33 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 import SoapForm from "./SoapForm";
-import soaps from "../../apis/soaps";
+import { createSoap } from "../../store";
 
 const SoapCreate = () => {
   const [newSoap, setNewSoap] = useState({
-    product: "",
-    url: "",
+    image: "",
+    title: "",
     description: "",
+    ingredients: "",
+    price: "",
   });
 
-  const onSubmit = async (newSoap) => {
-    const response = await soaps.post("/soaps", { ...newSoap });
-    console.log(response);
+  const dispatch = useDispatch();
+
+  const onNewSoapSubmit = (newSoap) => {
+    dispatch(createSoap(newSoap));
+    // navigate to soap list
+    //clean form
   };
 
   return (
     <div>
       <h1 className="soap-form-title">Create a new Product:</h1>
-      <SoapForm soap={newSoap} setSoap={setNewSoap} onSubmit={onSubmit} />
+      <SoapForm
+        soap={newSoap}
+        setSoap={setNewSoap}
+        onSubmitHandler={onNewSoapSubmit}
+      />
     </div>
   );
 };

@@ -1,49 +1,23 @@
 import React from "react";
-import Axios from "axios";
-import { Image } from "cloudinary-react";
 import "../layout/styles.css";
 
-const SoapForm = ({ soap, setSoap, onSubmit }) => {
-  const onChangeFile = () => {
-    const formData = new FormData();
-    formData.append("file", soap);
-    formData.append("upload_preset", "yzjnn6ki");
-    console.log(formData);
-
-    Axios.post(
-      "https://api.cloudinary.com/v1_1/deiacifoni/image/upload",
-      formData
-    ).then((response) => {
-      console.log(response);
-    });
-  };
-
+const SoapForm = ({ soap, setSoap, onSubmitHandler }) => {
   return (
     <div className="soap-form">
-      <form onSubmit={onSubmit}>
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          onSubmitHandler(soap);
+        }}
+      >
         <div>
           <div>
-            <label>Product Name</label>
+            <label>Soap Title</label>
             <input
               className="soap-input"
               type="text"
-              value={soap.product}
-              onChange={(e) => setSoap({ ...soap, product: e.target.value })}
-            />
-          </div>
-          <div>
-            <label>Url</label>
-            <input
-              className="soap-input-img"
-              type="file"
-              value={soap.url}
-              onChange={(event) => setSoap(event.target.files[0])}
-              multiple
-            />
-            <Image
-              className="soap-form-img"
-              cloudName="deiacifoni"
-              publicId="https://res.cloudinary.com/deiacifoni/image/upload/v1654193215/mz2oi8upo89ffvcqy1bu.jpg"
+              value={soap.title}
+              onChange={(e) => setSoap({ ...soap, title: e.target.value })}
             />
           </div>
           <div>
@@ -56,16 +30,66 @@ const SoapForm = ({ soap, setSoap, onSubmit }) => {
               }
             />
           </div>
+          <div>
+            <label>Ingredients</label>
+            <textarea
+              className="soap-input-text"
+              value={soap.ingredients}
+              onChange={(e) =>
+                setSoap({ ...soap, ingredients: e.target.value })
+              }
+            />
+          </div>
+          <div>
+            <label>Soap Price</label>
+            <input
+              className="soap-input"
+              type="text"
+              value={soap.price}
+              placeholder="$"
+              onChange={(e) => setSoap({ ...soap, price: e.target.value })}
+            />
+          </div>
+          <div>
+            <label>Image</label>
+            <input
+              className="soap-input-img"
+              type="text"
+              value={soap.image}
+              onChange={(event) =>
+                setSoap({ ...soap, image: event.target.value })
+              }
+            />
+          </div>
         </div>
-        <input
-          className="soap-form-btn"
-          onClick={onChangeFile}
-          type="submit"
-          value="Submit"
-        />
+        <input className="soap-form-btn" type="submit" value="Submit" />
       </form>
     </div>
   );
 };
 
 export default SoapForm;
+
+//next lines were used in a part of the project to link whit Cloudinary, to be implemented in the future, will not be used right now
+
+// import Axios from "axios";
+// import { Image } from "cloudinary-react";
+//   const onChangeFile = () => {
+//     const formData = new FormData();
+//     formData.append("file", soap);
+//     formData.append("upload_preset", "yzjnn6ki");
+//     console.log(formData);
+
+//     Axios.post(
+//       "https://api.cloudinary.com/v1_1/deiacifoni/image/upload",
+//       formData
+//     ).then((response) => {
+//       console.log(response);
+//     });
+//   };
+
+// <Image
+// className="soap-form-img"
+// cloudName="deiacifoni"
+// publicId="https://res.cloudinary.com/deiacifoni/image/upload/v1654193215/mz2oi8upo89ffvcqy1bu.jpg"
+// />

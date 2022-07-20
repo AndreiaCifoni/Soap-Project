@@ -2,20 +2,36 @@
 // login: {type: 'LOGIN', payload: user}
 // logout: {type: 'LOGOUT', payload: user}
 // register: {type: 'REGISTER', payload: form}
-// create soap: {type: 'CREATE_SOAP', payload: soapForm}
-// edit soap: {type: 'EDIT_SOAP', payload: soapId}
-// delete soap: {type: 'DELETE_SOAP', payload: soapId}
-// soap list: {type: 'SHOW_SOAP', payload: soapId}
-// soap info: {type: 'SOAP_INFO', payload: soapId}
 // soap cart: {type: 'ADD_CART', payload: soapId}
 
-import { FETCH_SOAPS } from "./type";
-import SoapProducts from "../../components/soap/SoapProducts";
+import { FETCH_SOAPS, CREATE_SOAP } from "./type";
 
 export const fetchSoaps = () => {
-  //como eu nao tenho API estou peganto do SoapProducts, senao teria que usar async await com axios request e passar o resultado pro payload
+  //como eu nao tenho API estou inicializando o SoapProducts diretamente no reducer initialState
+  //senao teria que usar async await com axios request e passar o resultado pro payload
   return {
     type: FETCH_SOAPS,
-    payload: SoapProducts,
+    payload: [],
   };
 };
+
+export const createSoap = (newSoap) => {
+  return {
+    type: CREATE_SOAP,
+    payload: newSoap,
+  };
+};
+
+// export const editSoap = (id) => {
+//   return {
+//     type: EDIT_SOAP,
+//     payload: id,
+//   };
+// };
+
+// export const deleteSoap = (id) => {
+//   return {
+//     type: DELETE_SOAP,
+//     payload: id,
+//   };
+// };

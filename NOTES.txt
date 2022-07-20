@@ -40,6 +40,8 @@ NOTES::
 
 
 
+**colocar no README - folders "api", "backend" and "apis" were created to future implementation and not used in the project right now
+
 
 
 
