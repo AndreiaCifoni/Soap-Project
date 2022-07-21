@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
+import { Link, useParams } from "react-router-dom";
+import { getSoapById } from "../../store";
 import SoapForm from "./SoapForm";
 
 const SoapEdit = () => {
@@ -9,6 +12,14 @@ const SoapEdit = () => {
     ingredients: "",
     price: "",
   });
+
+  const { id } = useParams();
+
+  const soap = useSelector((state) => getSoapById(state, id));
+
+  if (!soap) {
+    return null;
+  }
 
   const onEditSoapSubmit = (editSoap) => {
     // dispatch(createSoap(newSoap));

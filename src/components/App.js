@@ -24,7 +24,7 @@ const App = () => {
           <Route path={"/soaplist"} element={<SoapList />} />
           <Route path={"/soapcard"} element={<SoapCard />} />
           <Route path={"/soapcreate"} element={<SoapCreate />} />
-          <Route path={"/soapedit"} element={<SoapEdit />} />
+          <Route path={"/soapedit/:id"} element={<SoapEdit />} />
           <Route path={"/info/:id"} element={<SoapInfo />} />
         </Routes>
       </div>

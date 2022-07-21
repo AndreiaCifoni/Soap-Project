@@ -32,7 +32,7 @@ const SoapInfo = () => {
             <ShoppingCartIcon className="info-icon" />
             Add to cart
           </button>
-          <Link className="info-btn info-link" to="/soapedit">
+          <Link className="info-btn info-link" to={`/soapedit/${soap.id}`}>
             Edit Soap
           </Link>
         </div>
