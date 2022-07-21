@@ -16,8 +16,13 @@ const SoapCreate = () => {
 
   const onNewSoapSubmit = (newSoap) => {
     dispatch(createSoap(newSoap));
-    // navigate to soap list
-    //clean form
+    setNewSoap({
+      image: "",
+      title: "",
+      description: "",
+      ingredients: "",
+      price: "",
+    });
   };
 
   return (

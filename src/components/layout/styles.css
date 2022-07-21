@@ -447,7 +447,7 @@ body {
 /* SOAP FORM*/
 /* ******   DA PRA MELHORAR ESSE FORM COM O USER-FORM ... O INPUT TBM */
 
-.soap-form {
+.form-container {
   width: 50%;
   margin: 48px auto;
   padding: 20px 30px;
@@ -456,33 +456,31 @@ body {
   border-radius: 5px;
 }
 
-.soap-input {
+.form-input {
   font-size: 18px;
   color: #18576e;
+  padding: 5px;
   margin: 10px 0;
   border: 1px solid #264653;
   border-radius: 5px;
 }
 
-.soap-form label {
+.form-container label {
   display: inline-block;
   font-size: 18px;
   font-weight: bold;
   margin: 20px 15px 0px 0;
 }
 
-.soap-input-img {
+.form-img {
+  display: inline;
+  width: 60px;
+  margin: 15px 0;
   font-size: 16px;
   border-radius: 5px;
 }
 
-.soap-form-img {
-  display: inline;
-  width: 60px;
-  margin: 15px 0;
-}
-
-.soap-input-text {
+.form-text {
   width: 250px;
   height: 100px;
   margin-top: 20px;
@@ -490,13 +488,19 @@ body {
   border-radius: 5px;
 }
 
-.soap-form-btn {
+.form-btn {
   font-size: 16px;
   font-weight: bold;
-  margin: 50px 0 20px 0;
+  margin: 3rem 3rem 1.5rem 1rem;
   padding: 10px 15px;
   color: #faf3dd;
   background-color: #227c9d;
   border: 2px solid #264653;
   border-radius: 5px;
+}
+
+.form-link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1rem;
 }

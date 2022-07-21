@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../layout/styles.css";
 
 const SoapForm = ({ soap, setSoap, onSubmitHandler }) => {
   return (
-    <div className="soap-form">
+    <div className="form-container">
       <form
         onSubmit={(e) => {
           e.preventDefault();
@@ -14,7 +15,7 @@ const SoapForm = ({ soap, setSoap, onSubmitHandler }) => {
           <div>
             <label>Soap Title</label>
             <input
-              className="soap-input"
+              className="form-input"
               type="text"
               value={soap.title}
               onChange={(e) => setSoap({ ...soap, title: e.target.value })}
@@ -23,7 +24,7 @@ const SoapForm = ({ soap, setSoap, onSubmitHandler }) => {
           <div>
             <label>Description</label>
             <textarea
-              className="soap-input-text"
+              className="form-text"
               value={soap.description}
               onChange={(e) =>
                 setSoap({ ...soap, description: e.target.value })
@@ -33,7 +34,7 @@ const SoapForm = ({ soap, setSoap, onSubmitHandler }) => {
           <div>
             <label>Ingredients</label>
             <textarea
-              className="soap-input-text"
+              className="form-text"
               value={soap.ingredients}
               onChange={(e) =>
                 setSoap({ ...soap, ingredients: e.target.value })
@@ -43,7 +44,7 @@ const SoapForm = ({ soap, setSoap, onSubmitHandler }) => {
           <div>
             <label>Soap Price</label>
             <input
-              className="soap-input"
+              className="form-input"
               type="text"
               value={soap.price}
               placeholder="$"
@@ -53,7 +54,7 @@ const SoapForm = ({ soap, setSoap, onSubmitHandler }) => {
           <div>
             <label>Image</label>
             <input
-              className="soap-input-img"
+              className="form-input"
               type="text"
               value={soap.image}
               onChange={(event) =>
@@ -62,7 +63,10 @@ const SoapForm = ({ soap, setSoap, onSubmitHandler }) => {
             />
           </div>
         </div>
-        <input className="soap-form-btn" type="submit" value="Submit" />
+        <input className="form-btn" type="submit" value="Submit" />
+        <Link className="form-btn form-link" to="/soaplist">
+          Back to list
+        </Link>
       </form>
     </div>
   );
