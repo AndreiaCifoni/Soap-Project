@@ -7,7 +7,7 @@ import Register from "./user/Register";
 import SoapList from "./soap/SoapList";
 import SoapCard from "./soap/SoapCard";
 import SoapCreate from "./soap/SoapCreate";
-// import SoapEdit from "./soap/SoapEdit";
+import SoapEdit from "./soap/SoapEdit";
 import Navbar from "./navbar/Navbar";
 import SoapInfo from "./soap/SoapInfo";
 
@@ -24,7 +24,7 @@ const App = () => {
           <Route path={"/soaplist"} element={<SoapList />} />
           <Route path={"/soapcard"} element={<SoapCard />} />
           <Route path={"/soapcreate"} element={<SoapCreate />} />
-          {/* <Route path={"/soapedit"} element={<SoapEdit />} /> */}
+          <Route path={"/soapedit"} element={<SoapEdit />} />
           <Route path={"/info/:id"} element={<SoapInfo />} />
         </Routes>
       </div>

@@ -19,6 +19,11 @@ const NavMenu = [
     url: "/register",
     cName: "nav-item",
   },
+  {
+    title: "New Soap",
+    url: "/soapcreate",
+    cName: "nav-item",
+  },
 ];
 
 export default NavMenu;
