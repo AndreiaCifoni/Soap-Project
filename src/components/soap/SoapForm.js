@@ -63,7 +63,7 @@ const SoapForm = ({ soap, setSoap, onSubmitHandler }) => {
             />
           </div>
         </div>
-        <input className="form-btn" type="submit" value="Submit" />
+        <input className="form-btn" type="submit" value="Save" />
         <Link className="form-btn form-link" to="/soaplist">
           Back to list
         </Link>

@@ -5,17 +5,17 @@ import { getSoapById } from "../../store";
 import SoapForm from "./SoapForm";
 
 const SoapEdit = () => {
-  const [editSoap, setEditSoap] = useState({
-    image: "",
-    title: "",
-    description: "",
-    ingredients: "",
-    price: "",
-  });
-
   const { id } = useParams();
 
   const soap = useSelector((state) => getSoapById(state, id));
+
+  const [editSoap, setEditSoap] = useState({
+    image: soap.image,
+    title: soap.title,
+    description: soap.description,
+    ingredients: soap.ingredients,
+    price: soap.price,
+  });
 
   if (!soap) {
     return null;
@@ -23,13 +23,14 @@ const SoapEdit = () => {
 
   const onEditSoapSubmit = (editSoap) => {
     // dispatch(createSoap(newSoap));
-    // setNewSoap({
-    //   image: "",
-    //   title: "",
-    //   description: "",
-    //   ingredients: "",
-    //   price: "",
-    // });
+    console.log(editSoap);
+    setEditSoap({
+      image: "",
+      title: "",
+      description: "",
+      ingredients: "",
+      price: "",
+    });
   };
 
   return (
