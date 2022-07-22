@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { useSelector } from "react-redux";
-import { Link, useParams } from "react-router-dom";
-import { getSoapById } from "../../store";
+import { useSelector, useDispatch } from "react-redux";
+import { useParams } from "react-router-dom";
+import { getSoapById, editSoap } from "../../store";
 import SoapForm from "./SoapForm";
 
 const SoapEdit = () => {
@@ -9,7 +9,7 @@ const SoapEdit = () => {
 
   const soap = useSelector((state) => getSoapById(state, id));
 
-  const [editSoap, setEditSoap] = useState({
+  const [modifiedSoap, setEditSoap] = useState({
     image: soap.image,
     title: soap.title,
     description: soap.description,
@@ -17,13 +17,11 @@ const SoapEdit = () => {
     price: soap.price,
   });
 
-  if (!soap) {
-    return null;
-  }
+  const dispatch = useDispatch();
 
-  const onEditSoapSubmit = (editSoap) => {
-    // dispatch(createSoap(newSoap));
-    console.log(editSoap);
+  const onEditSoapSubmit = (modifiedSoap) => {
+    dispatch(editSoap(modifiedSoap));
+    console.log(modifiedSoap);
     setEditSoap({
       image: "",
       title: "",
@@ -33,11 +31,15 @@ const SoapEdit = () => {
     });
   };
 
+  if (!soap) {
+    return null;
+  }
+
   return (
     <div>
       <h1 className="soap-form-title">Edit a Product:</h1>
       <SoapForm
-        soap={editSoap}
+        soap={modifiedSoap}
         setSoap={setEditSoap}
         onSubmitHandler={onEditSoapSubmit}
       />
