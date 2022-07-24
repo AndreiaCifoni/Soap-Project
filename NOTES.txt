@@ -22,8 +22,6 @@ NOTES::
 *Home
     - get better look to it
 
-*SoapList 
-    - remove/include btn of new/edit soap (only owner can see)
 
 *SoapCard 
     - adjust photo(there is a small gap btween photo and container)

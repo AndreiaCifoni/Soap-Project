@@ -10,13 +10,14 @@ import SoapCreate from "./soap/SoapCreate";
 import SoapEdit from "./soap/SoapEdit";
 import Navbar from "./navbar/Navbar";
 import SoapInfo from "./soap/SoapInfo";
+import history from "../history";
 
 const App = () => {
   return (
     <div>
       <Navbar />
       <div>
-        <Routes>
+        <Routes history={history}>
           <Route path={"/"} element={<Home />} />
           <Route path={"/login"} element={<Login />} />
           <Route path={"/contact"} element={<ContactUs />} />

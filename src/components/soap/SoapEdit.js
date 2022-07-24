@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
 import { getSoapById, editSoap } from "../../store";
 import SoapForm from "./SoapForm";
+import history from "../../history";
 
 const SoapEdit = () => {
   const { id } = useParams();
@@ -15,6 +16,8 @@ const SoapEdit = () => {
 
   const onEditSoapSubmit = (modifiedSoap) => {
     dispatch(editSoap(modifiedSoap));
+    history.push(`/info/${soap.id}`);
+    window.location.reload();
   };
 
   if (!soap) {
