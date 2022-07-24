@@ -22,11 +22,10 @@ export const createSoap = (newSoap) => {
   };
 };
 
-export const editSoap = (modifiedSoap, id) => {
+export const editSoap = (modifiedSoap) => {
   return {
     type: EDIT_SOAP,
     payload: modifiedSoap,
-    id: id,
   };
 };
 

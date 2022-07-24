@@ -9,26 +9,12 @@ const SoapEdit = () => {
 
   const soap = useSelector((state) => getSoapById(state, id));
 
-  const [modifiedSoap, setEditSoap] = useState({
-    image: soap.image,
-    title: soap.title,
-    description: soap.description,
-    ingredients: soap.ingredients,
-    price: soap.price,
-  });
+  const [modifiedSoap, setEditSoap] = useState(soap);
 
   const dispatch = useDispatch();
 
   const onEditSoapSubmit = (modifiedSoap) => {
     dispatch(editSoap(modifiedSoap));
-    console.log(modifiedSoap);
-    setEditSoap({
-      image: "",
-      title: "",
-      description: "",
-      ingredients: "",
-      price: "",
-    });
   };
 
   if (!soap) {
