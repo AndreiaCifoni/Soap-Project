@@ -4,7 +4,7 @@
 // register: {type: 'REGISTER', payload: form}
 // soap cart: {type: 'ADD_CART', payload: soapId}
 
-import { FETCH_SOAPS, CREATE_SOAP, EDIT_SOAP } from "./type";
+import { FETCH_SOAPS, CREATE_SOAP, EDIT_SOAP, DELETE_SOAP } from "./type";
 
 export const fetchSoaps = () => {
   //como eu nao tenho API estou inicializando o SoapProducts diretamente no reducer initialState
@@ -29,9 +29,9 @@ export const editSoap = (modifiedSoap) => {
   };
 };
 
-// export const deleteSoap = (id) => {
-//   return {
-//     type: DELETE_SOAP,
-//     payload: id,
-//   };
-// };
+export const deleteSoap = (id) => {
+  return {
+    type: DELETE_SOAP,
+    payload: id,
+  };
+};

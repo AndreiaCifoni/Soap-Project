@@ -1,14 +1,20 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { Link, useParams } from "react-router-dom";
 import { ShoppingCartIcon } from "@heroicons/react/solid";
-import { getSoapById } from "../../store";
+import { getSoapById, deleteSoap } from "../../store";
 import "../layout/styles.css";
 
 const SoapInfo = () => {
   const { id } = useParams();
 
   const soap = useSelector((state) => getSoapById(state, id));
+
+  const dispatch = useDispatch();
+
+  const onDeleteSoap = (id) => {
+    dispatch(deleteSoap(id));
+  };
 
   if (!soap) {
     return null;
@@ -35,7 +41,11 @@ const SoapInfo = () => {
           <Link className="info-btn info-link" to={`/soapedit/${soap.id}`}>
             Edit Soap
           </Link>
-          <Link className="info-btn info-link" to="/soaplist">
+          <Link
+            onClick={() => onDeleteSoap(soap.id)}
+            className="info-btn info-link info-delete"
+            to="/soaplist"
+          >
             Delete
           </Link>
         </div>

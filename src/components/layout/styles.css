@@ -429,6 +429,10 @@ body {
   font-size: 1.1rem;
 }
 
+.info-delete {
+  background-color: #fb4b51;
+}
+
 .info-btn:hover {
   color: #ffa69e;
 }

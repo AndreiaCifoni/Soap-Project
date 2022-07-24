@@ -1,4 +1,9 @@
-import { FETCH_SOAPS, CREATE_SOAP, EDIT_SOAP } from "../actions/type";
+import {
+  FETCH_SOAPS,
+  CREATE_SOAP,
+  EDIT_SOAP,
+  DELETE_SOAP,
+} from "../actions/type";
 import { v4 as uuidv4 } from "uuid";
 import SoapProducts from "../../components/soap/SoapProducts";
 
@@ -27,6 +32,12 @@ const soapReducer = (state = initialState, action) => {
       soapsCopy[soapIndex] = editedSoap;
       //update the global state whit the updated array of soaps
       return { ...state, soaps: soapsCopy };
+
+    case DELETE_SOAP:
+      const soapId = action.payload;
+      const updatedSoap = state.soaps.filter((soap) => soap.id !== soapId);
+      return { ...state, soaps: updatedSoap };
+
     default:
       return state;
   }
