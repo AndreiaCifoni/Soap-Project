@@ -16,8 +16,7 @@ const SoapEdit = () => {
 
   const onEditSoapSubmit = (modifiedSoap) => {
     dispatch(editSoap(modifiedSoap));
-    history.push(`/info/${soap.id}`);
-    window.location.reload();
+    history.back();
   };
 
   if (!soap) {

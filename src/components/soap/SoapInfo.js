@@ -35,6 +35,9 @@ const SoapInfo = () => {
           <Link className="info-btn info-link" to={`/soapedit/${soap.id}`}>
             Edit Soap
           </Link>
+          <Link className="info-btn info-link" to="/soaplist">
+            Delete
+          </Link>
         </div>
       </div>
     </div>
