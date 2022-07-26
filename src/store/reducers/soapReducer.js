@@ -35,8 +35,8 @@ const soapReducer = (state = initialState, action) => {
 
     case DELETE_SOAP:
       const soapId = action.payload;
-      const updatedSoap = state.soaps.filter((soap) => soap.id !== soapId);
-      return { ...state, soaps: updatedSoap };
+      const updatedSoaps = state.soaps.filter((soap) => soap.id !== soapId);
+      return { ...state, soaps: updatedSoaps };
 
     default:
       return state;

@@ -71,6 +71,10 @@ body {
   display: none;
 }
 
+.nav-icon-icon {
+  width: 2.2rem;
+}
+
 @media screen and (max-width: 960px) {
   .nav-container {
     position: absolute;
